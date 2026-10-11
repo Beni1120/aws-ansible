@@ -1,0 +1,10 @@
+# SSH private keys
+*.pem
+*.key
+
+# Ansible temporary files
+*.retry
+
+# Python cache
+__pycache__/
+*.pyc
