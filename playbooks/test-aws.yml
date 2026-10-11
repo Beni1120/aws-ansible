@@ -1,0 +1,13 @@
+---
+- name: Test AWX connectivity to AWS EC2
+  hosts: role_web
+  gather_facts: true
+
+  tasks:
+    - name: Display the server hostname
+      ansible.builtin.debug:
+        msg: "Connected successfully to {{ inventory_hostname }}"
+
+    - name: Display the operating system
+      ansible.builtin.debug:
+        msg: "{{ ansible_distribution }} {{ ansible_distribution_version }}"
