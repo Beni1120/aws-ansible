@@ -1,6 +1,6 @@
 ---
 - name: configure aws web server
-  hosts: aws_servers
+  hosts: role_web
   become: true
 
   tasks:
